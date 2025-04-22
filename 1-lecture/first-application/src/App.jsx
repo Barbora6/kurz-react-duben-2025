@@ -1,8 +1,8 @@
 import "./App.css";
 import { Button } from "./Button";
-import { EmployeeTable } from "./EmployeeTable";
-import { List } from "./List";
-import { SecondComponent } from "./SecondComponent";
+import { EmployeeTable } from "./components/EmployeeTable";
+import { List } from "./components/List";
+import { SecondComponent } from "./components/SecondComponent";
 
 function App() {
   return (
