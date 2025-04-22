@@ -59,3 +59,12 @@ Víc elementů můžu zabalit do fragmentu
    Funkce mi bude vrací JSX (velmi podobné html, jen malé rozdíly)
    Vše co vracím musí být obalené v jednom elementu
    Funkci musím exportovat, abych ji mohl použít (importovat) jinde v aplikaci
+
+   ZKRATKY:
+   rafce = napíše novou komponentu
+
+   ctrl + mezerník = kurzor musí být v názvu komponenty, automaticky se vytvoří import
+
+   onClick = funkce handleClick se píše bez závorek, protože píšeme pouze referenci a funkce se vykoná, až se klikne na tlačítko
+
+   <button onClick={handleClick}>Tlačítko</button>;
