@@ -1,3 +1,4 @@
 export const FirstComponent = () => {
-  return <h1>Hello world</h1>;
+  const name = "Barboro!";
+  return <h1>Hello, {name}</h1>;
 };
