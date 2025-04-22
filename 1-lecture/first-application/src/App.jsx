@@ -1,5 +1,6 @@
 import "./App.css";
 import { Button } from "./Button";
+import { List } from "./List";
 import { SecondComponent } from "./SecondComponent";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Button />
       <SecondComponent />
+      <List />
     </>
   );
 }
