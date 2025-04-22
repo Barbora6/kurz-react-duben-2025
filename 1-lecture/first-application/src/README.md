@@ -68,3 +68,10 @@ Víc elementů můžu zabalit do fragmentu
    onClick = funkce handleClick se píše bez závorek, protože píšeme pouze referenci a funkce se vykoná, až se klikne na tlačítko
 
    <button onClick={handleClick}>Tlačítko</button>;
+
+   1. Úkol:
+      App komponenta bude parent dvou komponent Button a SecondComponent
+      SecondComponent bude obsahovat <h1></h1> s nadpisem “Header” a dvě komponenty Button a Text
+      Button komponenta bude jedna a ta stejná použitá na dvou místech v aplikaci
+      Button komponenta na klik zavolá funkci console.log() s textem "Button was clicked"
+      Text komponenta obsahuje proměnnou text, kde bude řetězec “Hello world”, který se vypíše v paragrafu na stránce

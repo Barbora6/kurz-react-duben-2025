@@ -1,11 +1,6 @@
 export const TextComponent = () => {
-  return (
-    <div>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed error
-        dolorum dolor placeat vero iste. Eaque similique illo maxime nam ipsam
-        enim, doloribus dolores, nesciunt illum, obcaecati esse quis cum.
-      </p>
-    </div>
-  );
+  const text = "Hello world";
+  return <p>{text}</p>;
 };
+
+// Text komponenta obsahuje proměnnou text, kde bude řetězec “Hello world”, který se vypíše v paragrafu na stránce

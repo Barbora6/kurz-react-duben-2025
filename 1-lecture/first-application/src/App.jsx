@@ -5,8 +5,8 @@ import { SecondComponent } from "./SecondComponent";
 function App() {
   return (
     <>
-      <SecondComponent />
       <Button />
+      <SecondComponent />
     </>
   );
 }
