@@ -52,3 +52,37 @@ Vytvoř komponentu List
 Do ní vytvoř prázdné pole, které si ulož do proměnné
 Napiš podmínku za použití if, kdy komponenta bude vracet null, pokud bude pole prázdné (využij .length vlastnost)
 Pokud v poli budou položky, bude komponenta vracet seznam (využij .map() metodu)
+
+PROPS = PŘEDÁVÁNÍ DAT KOMPONENTÁM
+-prop driling
+
+Komponenty využívají props na komunikaci mezi sebou
+Každá parent komponenta může předat informace/data svým child komponentám pomocí props
+Hodnota props může být jakákoliv JS hodnota (objekty, array, funkce apod.)
+Zvyšuje znovuvyužitelnost komponent
+
+Předání props z parent komponenty do child komponenty vypadá podobně jako v html přidání atributu
+například <img src=”” />
+V child komponentě jsou props jediný argument funkce
+props jsou vždy objekt
+Příklad na následujícím slidu ->
+
+export const App = () => {
+const name = "Ondra"
+return <Person name={name}>
+}
+export const Person = (props) => {
+return <p>You are {props.name}< /p>
+}
+
+Destructuring
+const props = {
+name: 'Ondra',
+age: 22
+mood: “happy”
+};
+const {name, age} = props
+console.log(name); // => 'Ondra',
+console.log(age); // => 22
+
+- objekt, který má atributy
