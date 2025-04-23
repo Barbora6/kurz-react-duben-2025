@@ -7,6 +7,12 @@ export const Numbers = () => {
     <div>
       <hr />
       <h1>Pole čísel</h1>
+      <p>
+        Úkol 3: Vytvoř si komponentu Numbers Do ní vytvoř pole numbers a přidej
+        čísla od 1 do 10 Vyfiltruj si čísla menší než 6 (pomocí .filter()) a
+        vypiš je do seznamu (.map()) Můžeme metody skládat za sebou, pro někoho
+        může být přehlednější to dělat postupně Nezapomeň přidat key
+      </p>
       <ul>
         {arrayNumbers
           .filter((number) => number < 6)

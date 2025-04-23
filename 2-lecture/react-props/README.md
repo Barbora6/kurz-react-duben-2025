@@ -27,7 +27,6 @@ pokud ho máme v datech
 Ukázka na příkladu ->
 
 Úkol 2:
-
 Vytvoř si komponentu Colors
 Do ní vytvoř pole colors a přidej libovolné barvy (minimálně 5)
 Vypiš barvy do seznamu pomocí .map() metody

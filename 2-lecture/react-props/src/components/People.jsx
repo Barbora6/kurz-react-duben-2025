@@ -7,6 +7,12 @@ export const People = () => {
     <div>
       <hr />
       <h1>Vypiš lidi starší 30let</h1>
+      <p>
+        Úkol 4: Ulož soubor lide.js do složky src Vytvoř si komponentu People
+        Ulož si data do proměnné people Vytvoř seznam jmen lidí, kteří jsou
+        starší než 30 let Použij metody .filter() a .map() Do komponenty People
+        vypiš jméno, příjmení i věk
+      </p>
       <ul>
         {filterOldPeople.map((person) => {
           return (
