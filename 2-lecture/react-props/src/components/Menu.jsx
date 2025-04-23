@@ -1,6 +1,6 @@
 export const Menu = () => {
   const textNadpisu = "Reactgirls akademie";
-  const menuItems = ["Kurz Html, css", "Java Script 1", "React", "TypeScript"];
+  const menuItems = ["kurz Html, Css", "Java Script 1", "React", "TypeScript"];
 
   const handleTitleClick = () => {
     console.log(textNadpisu);
