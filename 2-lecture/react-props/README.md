@@ -46,3 +46,9 @@ Ulož si data do proměnné people
 Vytvoř seznam jmen lidí, kteří jsou starší než 30 let
 Použij metody .filter() a .map()
 Do komponenty People vypiš jméno, příjmení i věk
+
+PROCVIČOVÁNÍ RENDROVÁNÍ
+Vytvoř komponentu List
+Do ní vytvoř prázdné pole, které si ulož do proměnné
+Napiš podmínku za použití if, kdy komponenta bude vracet null, pokud bude pole prázdné (využij .length vlastnost)
+Pokud v poli budou položky, bude komponenta vracet seznam (využij .map() metodu)

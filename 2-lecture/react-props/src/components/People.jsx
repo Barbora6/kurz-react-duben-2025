@@ -1,7 +1,11 @@
 import { lide } from "../lide.js";
 
 export const People = () => {
-  const filterOldPeople = lide.filter((filterPeople) => filterPeople.vek > 30);
+  //   const filterOldPeople = lide.filter((filterPeople) => filterPeople.vek > 30);
+
+  const people = lide;
+
+  const older30 = people.filter((clovek) => clovek.vek > 30);
 
   return (
     <div>
@@ -13,7 +17,7 @@ export const People = () => {
         starší než 30 let Použij metody .filter() a .map() Do komponenty People
         vypiš jméno, příjmení i věk
       </p>
-      <ul>
+      {/* <ul>
         {filterOldPeople.map((person) => {
           return (
             <li key={person.id}>
@@ -21,6 +25,14 @@ export const People = () => {
             </li>
           );
         })}
+      </ul> */}
+
+      <ul>
+        {older30.map((clovek) => (
+          <li key={clovek.id}>
+            {clovek.jmeno} {clovek.prijmeni} ({clovek.vek})
+          </li>
+        ))}
       </ul>
     </div>
   );
