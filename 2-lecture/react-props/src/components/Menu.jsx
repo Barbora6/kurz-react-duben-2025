@@ -1,7 +1,8 @@
 export const Menu = () => {
   const textNadpisu = "Reactgirls akademie";
+  const menuItems = ["Kurz Html, css", "Java Script 1", "React", "TypeScript"];
 
-  const handleTitle = () => {
+  const handleTitleClick = () => {
     console.log(textNadpisu);
   };
 
@@ -9,13 +10,11 @@ export const Menu = () => {
     <div>
       <h1>{textNadpisu}</h1>
       <ul>
-        <li>Kurz Html, css</li>
-        <li>Java Script 1</li>
-        <li>Java Script 2</li>
-        <li>React</li>
-        <li>Tipe Script</li>
+        {menuItems.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
-      <button onClick={handleTitle}>Klikni</button>
+      <button onClick={handleTitleClick}>Klikni</button>
     </div>
   );
 };
