@@ -10,7 +10,6 @@
 export const User = ({ firstName, lastName, age }) => {
   return (
     <div>
-      <hr />
       <h4>
         {firstName} {lastName}
       </h4>
