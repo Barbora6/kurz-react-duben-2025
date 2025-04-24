@@ -3,6 +3,7 @@ import { Colors } from "./components/Colors";
 import { Condition } from "./components/Condition";
 import { Execise } from "./components/Execise.jsx";
 import { List } from "./components/List";
+import { ListFruits } from "./components/ListFruits.jsx";
 import { Menu } from "./components/Menu";
 import { Numbers } from "./components/Numbers";
 import { People } from "./components/People";
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+      <ListFruits />
       <Menu />
       <Colors />
       <Numbers />
