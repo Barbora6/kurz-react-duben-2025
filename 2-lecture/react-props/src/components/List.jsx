@@ -64,15 +64,43 @@
 
 // PODMÍNĚNÉ VYKRESLENÍ POMOCÍ &&
 
+// export const List = () => {
+//   const emptyArray = [];
+//   return (
+//     emptyArray.length > 0 && (
+//       <ul>
+//         {emptyArray.map((item) => (
+//           <li key={item}>{item}</li>
+//         ))}
+//       </ul>
+//     )
+//   );
+// };
+
+// PROCVIČOVÁNÍ
+// export const List = () => {
+//   const pole = [];
+
+//   return pole.length === 0 ? (
+//     <h1>Pole nemá žádné čísla</h1>
+//   ) : (
+//     prompt("Zadej číslo do 100:")
+//   );
+// };
+
 export const List = () => {
-  const emptyArray = [];
-  return (
-    emptyArray.length > 0 && (
-      <ul>
-        {emptyArray.map((item) => (
-          <li key={item}>{item}</li>
+  const pole = [1, 2, 3, 4, 5, 8, 9, 7, 8];
+
+  if (pole.length > 0) {
+    return (
+      <div>
+        <h2>Pole má následující hodnoty:</h2>
+        {pole.map((item) => (
+          <p key={item}>{item}</p>
         ))}
-      </ul>
-    )
-  );
+      </div>
+    );
+  } else {
+    return <p>Zadej číslo do 10:</p>;
+  }
 };

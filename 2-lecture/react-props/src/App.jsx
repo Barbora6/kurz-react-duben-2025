@@ -11,7 +11,7 @@ import { PropsFruits } from "./components/PropsFruits.jsx";
 import { PropsVegetables } from "./components/PropsVegetables.jsx";
 import { User } from "./components/User";
 import { UserGreeting } from "./components/UserGreeting.jsx";
-import { lide } from "./lide.js";
+// import { lide } from "./lide.js";
 
 function App() {
   // const user = {
@@ -20,21 +20,21 @@ function App() {
   //   age: 45
   // };
 
-  const fruits = [
-    { id: 1, name: "apple", calories: 95 },
-    { id: 2, name: "orange", calories: 45 },
-    { id: 3, name: "banana", calories: 105 },
-    { id: 4, name: "coconut", calories: 59 },
-    { id: 5, name: "pineapple", calories: 205 }
-  ];
+  // const fruits = [
+  //   { id: 1, name: "apple", calories: 95 },
+  //   { id: 2, name: "orange", calories: 45 },
+  //   { id: 3, name: "banana", calories: 105 },
+  //   { id: 4, name: "coconut", calories: 59 },
+  //   { id: 5, name: "pineapple", calories: 205 }
+  // ];
 
-  const vegetables = [
-    { id: 6, name: "potatoes", calories: 28 },
-    { id: 7, name: "celery", calories: 25 },
-    { id: 8, name: "carrots", calories: 14 },
-    { id: 9, name: "corn", calories: 32 },
-    { id: 10, name: "broccoli", calories: 12 }
-  ];
+  // const vegetables = [
+  //   { id: 6, name: "potatoes", calories: 28 },
+  //   { id: 7, name: "celery", calories: 25 },
+  //   { id: 8, name: "carrots", calories: 14 },
+  //   { id: 9, name: "corn", calories: 32 },
+  //   { id: 10, name: "broccoli", calories: 12 }
+  // ];
 
   return (
     <>
@@ -46,25 +46,25 @@ function App() {
         <PropsVegetables categoVeget="Vegetables" itemVeget={vegetables} />
       ) : null} */}
 
-      {fruits.length > 0 && <PropsFruits items={fruits} category="Fruits" />}
+      {/* {fruits.length > 0 && <PropsFruits items={fruits} category="Fruits" />}
 
       {vegetables.length > 0 && (
         <PropsVegetables categoVeget="Vegetables" itemVeget={vegetables} />
-      )}
+      )} */}
 
       {/* <ListFruits />
       <Menu />
       <Colors />
-      <Numbers />
-      <People />
-      <Condition />
+        <Numbers />
+        <People />
+        /*<Condition />
     
       <User
         firstName={user.firstName}
         lastName={user.lastName}
         age={user.age}
       /> */}
-      {/* <List /> */}
+      <List />
 
       {/* <User firstName={"Barbora"} lastName={"Smetanová"} />
 
@@ -83,7 +83,7 @@ function App() {
       */}
       {/* <hr />
       <Execise firstName={"Filip"} lastName={"Smetana"} age={7} /> */}
-      <hr />
+      {/* <hr />
       {lide.map((clovek) => {
         return (
           <Execise
@@ -93,7 +93,7 @@ function App() {
             age={clovek.vek}
           />
         );
-      })}
+      })} */}
 
       <hr />
       <UserGreeting name="Lukášku" surname="Smetano" isLoggedIn={true} />
