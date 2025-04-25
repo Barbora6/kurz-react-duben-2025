@@ -38,20 +38,33 @@ function App() {
 
   return (
     <>
-      <PropsFruits items={fruits} category="Fruits" />
-      <PropsVegetables categoVeget="Vegetables" itemVeget={vegetables} />
+      {/* {fruits.length > 0 ? (
+        <PropsFruits items={fruits} category="Fruits" />
+      ) : null} */}
+
+      {/* {vegetables.length > 0 ? (
+        <PropsVegetables categoVeget="Vegetables" itemVeget={vegetables} />
+      ) : null} */}
+
+      {fruits.length > 0 && <PropsFruits items={fruits} category="Fruits" />}
+
+      {vegetables.length > 0 && (
+        <PropsVegetables categoVeget="Vegetables" itemVeget={vegetables} />
+      )}
+
       {/* <ListFruits />
       <Menu />
       <Colors />
       <Numbers />
       <People />
       <Condition />
-      <List /> */}
-      {/* <User
+    
+      <User
         firstName={user.firstName}
         lastName={user.lastName}
         age={user.age}
       /> */}
+      <List />
       <User firstName={"Barbora"} lastName={"Smetanová"} />
 
       {lide.map((clovek) => {

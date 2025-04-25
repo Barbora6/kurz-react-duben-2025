@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=fkl1Kn_QWCI
+
 export const PropsFruits = ({ category, items }) => {
   const categoryItem = category;
   const itemList = items;
