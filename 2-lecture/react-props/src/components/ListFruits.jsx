@@ -10,7 +10,7 @@ export const ListFruits = () => {
   //   seřadí ovoce v abecedním pořadí a-z
   //   fruits.sort((a, b) => a.name.localeCompare(b.name));
 
-  //   // v abecedním pořadí
+  //   v abecedním pořadí
   //   fruits.sort((a, b) => b.name.localeCompare(a.name));
 
   //   fruits.sort((a,b) => a.calories - b.calories)
@@ -18,13 +18,13 @@ export const ListFruits = () => {
   //   fruits.sort((a, b) => b.calories - a.calories);
 
   //   FUNKCE, KTERÁ VYPÍŠE OVOCE, KTERÉ MÁ MÉNĚ NEŽ 100kcal
-  //   const lowCalFruit = fruits.filter((fruit) => fruit.calories < 100);
+  const lowCalFruit = fruits.filter((fruit) => fruit.calories < 100);
 
-  //   const listItems = lowCalFruit.map((lowCalFruit) => (
-  //     <li key={lowCalFruit.id}>
-  //       {lowCalFruit.name}: &nbsp; ({lowCalFruit.calories}kcal);
-  //     </li>
-  //   ));
+  const listItems = lowCalFruit.map((lowCalFruit) => (
+    <li key={lowCalFruit.id}>
+      {lowCalFruit.name}: &nbsp; ({lowCalFruit.calories}kcal);
+    </li>
+  ));
 
   //   FUNKCE, KTERÁ VYPÍŠE OVOCE, KTERÉ MÁ VÍCE NEŽ 100kcal
   //   const highCalFruit = fruits.filter((fruit) => fruit.calories >= 100);
@@ -35,11 +35,17 @@ export const ListFruits = () => {
   //     </li>
   //   ));
 
-  const listItems = fruits.map((fruits) => (
+  const listItems1 = fruits.map((fruits) => (
     <li key={fruits.id}>
-      {fruits.name}: &nbsp; ({fruits.calories}kcal);
+      {fruits.name}: &nbsp; <b>({fruits.calories}kcal)</b>;
     </li>
   ));
 
-  return <ol>{listItems}</ol>;
+  return (
+    <>
+      {" "}
+      <ol>{listItems1}</ol>
+      <ol>{listItems}</ol>;
+    </>
+  );
 };

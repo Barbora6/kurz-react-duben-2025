@@ -64,8 +64,9 @@ function App() {
         lastName={user.lastName}
         age={user.age}
       /> */}
-      <List />
-      <User firstName={"Barbora"} lastName={"Smetanová"} />
+      {/* <List /> */}
+
+      {/* <User firstName={"Barbora"} lastName={"Smetanová"} />
 
       {lide.map((clovek) => {
         return (
@@ -76,7 +77,7 @@ function App() {
             age={clovek.vek}
           />
         );
-      })}
+      })} */}
       {/* <Execise
       firstName={'Filip'}  lastName={'Smetana'}/> 
       */}
