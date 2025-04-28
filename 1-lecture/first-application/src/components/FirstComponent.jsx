@@ -1,4 +1,11 @@
+import { Button } from "./Button";
+
 export const FirstComponent = () => {
-  const name = "Barboro!";
-  return <h1>Hello, {name}</h1>;
+  const name = "BackFlipp!";
+  return (
+    <>
+      <h1>Hello, {name}</h1>
+      <Button />
+    </>
+  );
 };

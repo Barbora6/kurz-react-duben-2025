@@ -89,7 +89,7 @@
 // };
 
 export const List = () => {
-  const pole = [1, 2, 3, 4, 5, 8, 9, 7, 8];
+  const pole = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   if (pole.length > 0) {
     return (
@@ -101,6 +101,6 @@ export const List = () => {
       </div>
     );
   } else {
-    return <p>Zadej číslo do 10:</p>;
+    return prompt("Zadej číslo do 10:");
   }
 };
