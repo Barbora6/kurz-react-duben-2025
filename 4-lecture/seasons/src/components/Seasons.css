@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 450px;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  margin-top: 10px;
+}

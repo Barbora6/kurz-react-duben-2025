@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import rocniobdobi from "../../images/rocni-obdobi.jpg";
+import "./Seasons.css";
 
 export const Seasons = () => {
   return (
