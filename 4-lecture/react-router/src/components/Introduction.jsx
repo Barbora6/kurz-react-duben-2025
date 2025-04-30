@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Introduction = () => {
   return (
     <div>
@@ -8,6 +10,9 @@ export const Introduction = () => {
         programování. Spolu s profesionálními lektory a mentory pomáháme ženám,
         které se chtějí stát programátorkami. Zapojte se do naší komunity na
         sociálních sítích.
+      </p>
+      <p>
+        Mimo jiného pořádáme řadu <Link to="/akademie">akademií.</Link>
       </p>
     </div>
   );
