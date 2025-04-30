@@ -1,3 +1,7 @@
 export const Academies = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Zapoj se do a nauč se programovat v Reactu!</h1>
+    </div>
+  );
 };
