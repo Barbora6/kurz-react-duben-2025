@@ -21,7 +21,8 @@ body {
 }
 
 .Season-image {
-  width: 15rem;
+  width: 40rem;
   float: left;
   padding-right: 1rem;
+  margin: 2rem;
 }
