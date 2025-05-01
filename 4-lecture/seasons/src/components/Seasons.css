@@ -13,3 +13,15 @@ body {
   margin: 30px auto;
   margin-top: 10px;
 }
+
+.Season {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Season-image {
+  width: 15rem;
+  float: left;
+  padding-right: 1rem;
+}

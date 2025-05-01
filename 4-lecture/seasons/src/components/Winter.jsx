@@ -3,9 +3,11 @@ import zima from "../../images/zima.jpg";
 
 export const Winter = () => {
   return (
-    <div>
-      <h1>Zima</h1>
-      <img src={zima} alt="" />
+    <Season
+      heading="Zima"
+      imageSource={zima}
+      imageAlternativeText="Zimní krajina"
+    >
       <p>
         Zima je jedno ze čtyř ročních období mezi podzimem a jarem střídajících
         se v mírných a polárních oblastech. Na severní polokouli nastává zima v
@@ -14,6 +16,6 @@ export const Winter = () => {
         obdobím s nejnižšími teplotami.
         <Link to="/">Roční obodobí</Link>
       </p>
-    </div>
+    </Season>
   );
 };

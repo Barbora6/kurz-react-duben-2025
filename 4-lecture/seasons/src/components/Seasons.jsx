@@ -1,27 +1,20 @@
-import { Link } from "react-router-dom";
-import rocniobdobi from "../../images/rocni-obdobi.jpg";
 import "./Seasons.css";
 
-export const Seasons = () => {
+export const Seasons = ({
+  heading,
+  imageSource,
+  imageAlternativeText,
+  children
+}) => {
   return (
-    <div>
-      <h1>Roční období</h1>
-      <br />
-      <Link to="/spring">Jaro</Link>
-      <br />
-      <Link to="/summer">Léto</Link>
-      <br />
-      <Link to="/autumn">Podzim</Link>
-      <br />
-      <Link to="/winter">Zima</Link>
-      <img src={rocniobdobi} alt="" />
-      <p>
-        Roční období je jedna z hlavních částí roku. Obvykle se roční období
-        vyznačuje opakovanou pravidelnou změnou počasí. V tropickém a
-        subtropickém pásu se obvykle mluví o období dešťů (monzunovém období) a
-        období sucha, neboť změny v množství srážek jsou mnohem výraznější než
-        změna průměrné teploty.
-      </p>
-    </div>
+    <section className="Season">
+      <h1>{heading}</h1>
+      <img
+        src={imageSource}
+        alt={imageAlternativeText}
+        className="Season-image"
+      />
+      {children}
+    </section>
   );
 };

@@ -3,9 +3,11 @@ import podzim from "../../images/podzim.jpg";
 
 export const Autumn = () => {
   return (
-    <div>
-      <h1>Podzim</h1>
-      <img src={podzim} alt="" />
+    <Season
+      heading="Podzim"
+      imageSource={podzim}
+      imageAlternativeText="podzimní listí"
+    >
       <p>
         Podzim (zastarale jeseň) je jedno ze čtyř ročních období, je to přechod
         mezi létem a zimou. V klimatických podmínkách mírného pásu se právě na
@@ -14,6 +16,6 @@ export const Autumn = () => {
         je mnohem horší počasí.
         <Link to="/">Roční období</Link>
       </p>
-    </div>
+    </Season>
   );
 };
