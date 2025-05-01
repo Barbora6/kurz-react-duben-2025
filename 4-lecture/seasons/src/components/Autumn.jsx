@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import podzim from "../../images/podzim.jpg";
+import { Seasons } from "./Seasons";
 
 export const Autumn = () => {
   return (
-    <Season
+    <Seasons
       heading="Podzim"
       imageSource={podzim}
       imageAlternativeText="podzimní listí"
@@ -16,6 +17,6 @@ export const Autumn = () => {
         je mnohem horší počasí.
         <Link to="/">Roční období</Link>
       </p>
-    </Season>
+    </Seasons>
   );
 };

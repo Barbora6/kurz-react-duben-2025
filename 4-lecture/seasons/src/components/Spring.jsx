@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import jaro from "../../images/jaro.jpg";
+import { Seasons } from "./Seasons";
 
 export const Spring = () => {
   return (
-    <Season heading="Jaro" imageSource={jaro} imageAlternativeText="Jaro">
+    <Seasons heading="Jaro" imageSource={jaro} imageAlternativeText="Jaro">
       <p>
         Jaro (zastarale, příp. básnicky vesna) je jedno ze čtyř ročních období.
         V mírném pásu se vyznačuje začátkem vegetativní aktivity rostlin a
@@ -29,6 +30,6 @@ export const Spring = () => {
         je po celý rok zimní počasí (hrají zde ovšem velkou roli polární den a
         noc).
       </p>
-    </Season>
+    </Seasons>
   );
 };

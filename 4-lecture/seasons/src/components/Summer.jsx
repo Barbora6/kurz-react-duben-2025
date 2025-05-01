@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import leto from "../../images/leto.jpg";
+import { Seasons } from "./Seasons";
 
 export const Summer = () => {
   return (
-    <Season heading="Léto" imageSource={leto} imageAlternativeText="léto">
+    <Seasons heading="Léto" imageSource={leto} imageAlternativeText="léto">
       <p>
         Léto je roční období mezi jarem a podzimem. Nastává v mírných a
         polárních oblastech, v jinou dobu na severní a jižní polokouli. V
@@ -12,6 +13,6 @@ export const Summer = () => {
         <br />
         <Link to="/">Roční období</Link>
       </p>
-    </Season>
+    </Seasons>
   );
 };
