@@ -16,6 +16,9 @@ function App() {
             <li>
               <Link to="/public-holiday">Státní svátky</Link>
             </li>
+            <li>
+              <Link to="/employee">Seznam zaměstnanců</Link>
+            </li>
           </ul>
         </section>
       </main>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Loader } from "../Loader";
 
 export const PublicHoliday = () => {
   const [holidays, setHolidays] = useState();
@@ -17,6 +18,13 @@ export const PublicHoliday = () => {
   // [] pole závislostí
   // useEffect nesmí být async funkce
 
+  // const datum = new Date(holiday.date);
+  // const formatovaneDatum = datum.toLocaleDateString("cs-CZ", {
+  //   day: "2-digit",
+  //   month: "2-digit",
+  //   year: "numeric"
+  // });
+
   return (
     <main>
       <header>
@@ -24,11 +32,15 @@ export const PublicHoliday = () => {
       </header>
       <section>
         {holidays === undefined ? (
-          <div>Data se načítají.</div>
+          <div>
+            <Loader />
+          </div>
         ) : (
           <ul>
             {holidays.map((holiday) => (
-              <li>{holiday.localName}</li>
+              <li>
+                {holiday.localName}, {holiday.formatovaneDatum}
+              </li>
             ))}
           </ul>
         )}
