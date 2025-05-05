@@ -3,7 +3,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Forms } from "./components/Forms";
 import App from "./App";
-import { PublicHoliday } from "./components/PublicHoliday";
+import { PublicHoliday } from "./components/PublicHolidays/PublicHoliday";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
