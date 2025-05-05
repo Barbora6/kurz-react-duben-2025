@@ -1,10 +1,10 @@
-.Forms table {
+.table {
   border: 1px solid lightgray;
   border-collapse: collapse;
 }
 
-.Forms th,
-.Forms td {
+.th,
+.td {
   border: 1px solid lightgray;
   border-collapse: collapse;
   padding: 1rem;

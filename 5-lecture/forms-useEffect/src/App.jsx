@@ -13,6 +13,9 @@ function App() {
             <li>
               <Link to="/forms">Formulářové prvky v Reactu</Link>
             </li>
+            <li>
+              <Link to="/public-holiday">Státní svátky</Link>
+            </li>
           </ul>
         </section>
       </main>
