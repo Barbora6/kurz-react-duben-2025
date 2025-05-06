@@ -3,8 +3,9 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Forms } from "./components/Forms";
 import App from "./App";
-import { PublicHoliday } from "./components/PublicHolidays/PublicHoliday";
+
 import { Employees } from "./components/Employees/Employees";
+import { PublicHoliday } from "./components/PublicHolidays/PublicHoliday";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
