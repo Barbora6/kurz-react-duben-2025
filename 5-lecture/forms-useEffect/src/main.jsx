@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Forms } from "./components/Forms";
+import { Forms } from "./components/Forms/Forms";
 import App from "./App";
 
 import { Employees } from "./components/Employees/Employees";

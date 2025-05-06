@@ -45,8 +45,8 @@ export const Forms = () => {
   console.log("firstName:", firstName);
 
   return (
-    <main>
-      <h1>Tady bude formulář</h1>
+    <main className="Forms">
+      <h1>Zadávání dat</h1>
       <table>
         <tbody>
           <tr>
@@ -90,10 +90,10 @@ export const Forms = () => {
           </tr>
           <tr>
             <th>
-              <label htmlFor="day">Den</label>
+              <label htmlFor="day">Den v týdnu</label>
             </th>
             <td>
-              <select value={dayCode} onChange={handleDayChange}>
+              <select id="day" value={dayCode} onChange={handleDayChange}>
                 {DAYS.map((day) => (
                   <option key={day.code} value={day.code}>
                     {day.name}
@@ -107,9 +107,8 @@ export const Forms = () => {
             <th>Král</th>
             <td>
               {MAGI.map((magus) => (
-                <label>
+                <label key={magus.code}>
                   <input
-                    id={magus.code}
                     type="radio"
                     value={magus.code}
                     onChange={handleMagusChange}
