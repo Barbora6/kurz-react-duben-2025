@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import { LanguageSelector } from "./LanguageSelector";
 
 export const Root = () => {
   return (
@@ -17,7 +18,9 @@ export const Root = () => {
             </li>
           </ul>
         </nav>
-        <div className="LanguageSelectorContainer"></div>
+        <div className="LanguageSelectorContainer">
+          <LanguageSelector />
+        </div>
       </header>
       <Outlet />
     </div>

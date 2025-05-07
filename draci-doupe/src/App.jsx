@@ -4,6 +4,10 @@ import { Root } from "./components/Root";
 import { Introduction } from "./components/Introduction";
 import { Races } from "./components/Races";
 import { Professions } from "./components/Professions";
+import {
+  LanguageProvider,
+  useLanguageContext
+} from "./components/LanguageContext";
 
 const router = createBrowserRouter([
   {
@@ -19,9 +23,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <RouterProvider router={router}></RouterProvider>
-    </>
+    </LanguageProvider>
   );
 }
 
