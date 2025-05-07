@@ -1,3 +1,9 @@
+import "./Races.css";
+
 export const Races = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h2>Rasy</h2>
+    </div>
+  );
 };
