@@ -8,6 +8,14 @@ import {
   LanguageProvider,
   useLanguageContext
 } from "./components/LanguageContext";
+import { IntlProvider } from "react-intl";
+import messagesCs from "./messages_cs.json";
+import messagesEn from "./messages_en.json";
+
+const messages = {
+  cs: messagesCs,
+  en: messagesEn
+};
 
 const router = createBrowserRouter([
   {
@@ -24,9 +32,17 @@ const router = createBrowserRouter([
 function App() {
   return (
     <LanguageProvider>
-      <RouterProvider router={router}></RouterProvider>
+      <AppInner />
     </LanguageProvider>
   );
 }
+const AppInner = () => {
+  const { language } = useLanguageContext();
+  return (
+    <IntlProvider locale={language} messages={messages[language]}>
+      <RouterProvider router={router}></RouterProvider>
+    </IntlProvider>
+  );
+};
 
 export default App;

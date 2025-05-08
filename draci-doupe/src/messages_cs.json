@@ -1,0 +1,17 @@
+{
+  "introduction_title": "Úvod",
+  "introduction_draciDoupe_name": "Dračí doupě",
+  "introduction_draciDoupe_description": "Dračí doupě (zkratka DD či DrD), je česká fantasy hra na hrdiny, kterou v roce 1990 vytvořilo nakladatelství Altar. Hra vychází z americké hry na hrdiny Dungeons & Dragons (D&D). Průběh hry řídí jeden hráč nazývaný Pán jeskyně, ostatní hráči hrají za jednotlivé postavy, která má každá svou rasu (člověk, elf, trpaslík ap.) a povolání (válečník, zloděj, čaroděj ap.). V roce 2004 vyšla nová hra Dračí doupě Plus (tzv. „Pluska“) s komplikovaným jednotným systémem založeným na převodových logaritmických tabulkách, určená spíše pokročilejším hráčům. V roce 2011 vyšlo Dračí doupě II, jehož cílem je nahradit staré Dračí doupě jednodušším a ucelenějším systémem, snadným pro začátečníky. Tyto hry mají tematickou návaznost na původní Dračí doupě, ale herní systém se liší.",
+  "races_title": "Rasy",
+  "races_introduction": "Při vytváření postavy si jako první hráč vybere jednu z těchto ras:",
+  "races_hobbit_name": "Hobit",
+  "races_hobbit_description": "Bybytost, která je menší než člověk, objevující se v díle J. R. R. Tolkiena Pán prstenů. Má chlupaté nohy, chodí bez bot a zpravidla má kudrnaté vlasy a kulaté bříško. Jejich zvláštní rasovou schopností je čich – schopnost vycítit blízkost jiných tvorů. Vynikají vysokou obratností a charisma, což z nich ve hře dělá vynikající zloděje. Rodovou zbraní je lehká kuše (bonus na útok).",
+  "races_kuduk_name": "Kudůk",
+  "races_kuduk_description": "zvláštní humanoidní druh. Jméno „kudůk“, psáno správněji „kudúk“, je též vypůjčeno z díla J. R. R. Tolkiena, kde se jím ve své vlastní řeči nazývají hobiti. Kudůkové v DrD vznikli v dávných dobách splynutím části plemene trpaslíků a hobitů. Vyznačují se nízkým vzrůstem (větší než hobiti, menší než trpaslíci), šikovností a zručností. Zpravidla se živí jako alchymisté nebo zloději. Jejich rodovou zbraní je sekera.",
+  "races_trpaslik_name": "Trpaslík",
+  "races_trpaslik_description": "trpaslíci jsou ve hře nadaní zvláštní schopností infravidění – schopnosti ve tmě vidět teplo (vzdušné proudy, teplokrevné tvory, studená jezírka apod.) a orientovat se díky tomu třeba v podzemí. Silní a velmi odolní, což je (herně) předurčuje býti válečníky. Jejich rodovou zbraní je válečná sekera.",
+  "professions_name": "Povolání v Dračím Doupěti",
+  "professions_introduction": "Každý hráč si po zvolení rasy zvolí také jedno z pěti povolání. Při tvorbě povolání se dvě vlastnosti určují podle tabulky povolání a nikoli podle rasy. Ta pak má bonus či postih k takto určené vlastnosti. Např. trpaslík má průměrnou obratnost, ale v případě trpaslíka-zloděje dojde k určení obratnosti dle povolání, snížené o drobný postih, aby se tak odlišil např. od hobita-zloděje, který si naopak obratnosti přičte bonus. Maxima se pak pochopitelně liší.",
+  "professions_warrior_name": "Válečník",
+  "professions_warrior_description": "se soustředí na boj tváří v tvář (zbraně a zbroje bez omezení) dokáže odhadovat sílu protivníků, léčit svá zranění nebo se pokusit zastrašit a zahnat nestvůry. Vlastnosti povolání: síla a odolnost."
+}
