@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import "./StudentList.css";
 import { Link } from "react-router-dom";
-import { fetchStudents, fetchCodebooks } from "../data/rest-api-client";
+import {
+  fetchStudents,
+  fetchCodebooks,
+  deleteStudent
+} from "../data/rest-api-client";
 import { getCodebookItemName } from "../data/codebook";
 
 export const StudentList = () => {
@@ -18,6 +22,12 @@ export const StudentList = () => {
   useEffect(() => {
     fetchAndSetStudents();
   }, []);
+
+  const handleDelete = async (id) => {
+    setStudents(undefined);
+    await deleteStudent(id);
+    fetchAndSetStudents();
+  };
 
   return students === undefined || codebooks === undefined ? (
     <>
@@ -52,7 +62,11 @@ export const StudentList = () => {
                 <td>{getCodebookItemName(codebooks.year, student.year)}</td>
                 <td>
                   <Link to={`/students/${student.id}/edit`}>Edit</Link>
-                  <button type="button" class="btn btn-danger student-delete">
+                  <button
+                    type="button"
+                    class="btn btn-danger student-delete"
+                    onClick={() => handleDelete(student.id)}
+                  >
                     Delete
                   </button>
                 </td>
