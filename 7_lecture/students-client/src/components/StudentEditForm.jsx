@@ -97,23 +97,6 @@ export const StudentEditForm = () => {
                 />
               </td>
             </tr>
-
-            <tr>
-              <th>
-                <label for="house" class="form-label">
-                  House
-                </label>
-              </th>
-              <td>
-                <CodebookSelect
-                  id="house"
-                  value={student.house}
-                  codebook={codebooks.house}
-                  onChange={(event) => setHouse(event.target.value)}
-                ></CodebookSelect>
-              </td>
-            </tr>
-
             <tr>
               <th>
                 <label for="year" class="form-label">
@@ -126,6 +109,21 @@ export const StudentEditForm = () => {
                   value={student.year}
                   codebook={codebooks.year}
                   onChange={(event) => setYear(event.target.value)}
+                ></CodebookSelect>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="house" class="form-label">
+                  House
+                </label>
+              </th>
+              <td>
+                <CodebookSelect
+                  id="house"
+                  value={student.house}
+                  codebook={codebooks.house}
+                  onChange={(event) => setHouse(event.target.value)}
                 ></CodebookSelect>
               </td>
             </tr>
@@ -151,21 +149,6 @@ export const StudentEditForm = () => {
                   value={student.house}
                   codebook={codebooks.house}
                   onChange={(event) => setHouse(event.target.value)}
-                ></CodebookSelect>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <label for="year" class="form-label">
-                  Year
-                </label>
-              </th>
-              <td>
-                <CodebookSelect
-                  id="year"
-                  value={student.year}
-                  codebook={codebooks.year}
-                  onChange={(event) => setYear(event.target.value)}
                 ></CodebookSelect>
               </td>
             </tr>

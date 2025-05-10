@@ -36,7 +36,7 @@ export const StudentList = () => {
   ) : (
     <div className="StudentList">
       <header>
-        <h1>Studenti</h1>
+        <h1>Seznam studentů</h1>
       </header>
       <section>
         <table class="table table-light table-striped table-bordered">
