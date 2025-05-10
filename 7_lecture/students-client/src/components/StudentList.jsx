@@ -1,18 +1,29 @@
 import { useEffect, useState } from "react";
 import "./StudentList.css";
+import { Link } from "react-router-dom";
+import { fetchStudents, fetchCodebooks } from "../data/rest-api-client";
+import { getCodebookItemName } from "../data/codebook";
 
 export const StudentList = () => {
-  const [students, setStudents] = useState([]);
+  const [students, setStudents] = useState();
+  const [codebooks, setCodebooks] = useState();
+
+  const fetchAndSetStudents = async () => {
+    const students = await fetchStudents();
+    setStudents(students);
+    const codebooks = await fetchCodebooks();
+    setCodebooks(codebooks);
+  };
 
   useEffect(() => {
-    const fetchStudents = async () => {
-      const response = await fetch("http://localhost:8080/students");
-      setStudents(await response.json());
-    };
-    fetchStudents();
+    fetchAndSetStudents();
   }, []);
 
-  return (
+  return students === undefined || codebooks === undefined ? (
+    <>
+      <p>Načítám</p>
+    </>
+  ) : (
     <div className="StudentList">
       <header>
         <h1>Studenti</h1>
@@ -32,13 +43,15 @@ export const StudentList = () => {
             {students.map((student) => (
               <tr key={student.id}>
                 <td>
-                  {student.firstName} {student.lastName}
+                  <Link to={`/students/${student.id}`}>
+                    {student.firstName} {student.lastName}
+                  </Link>
                 </td>
-                <td>{student.gender}</td>
-                <td>{student.house}</td>
-                <td>{student.year}</td>
+                <td>{getCodebookItemName(codebooks.gender, student.gender)}</td>
+                <td>{getCodebookItemName(codebooks.house, student.house)}</td>
+                <td>{getCodebookItemName(codebooks.year, student.year)}</td>
                 <td>
-                  <a href="edit.html">Edit</a>
+                  <Link to={`/students/${student.id}/edit`}>Edit</Link>
                   <button type="button" class="btn btn-danger student-delete">
                     Delete
                   </button>
